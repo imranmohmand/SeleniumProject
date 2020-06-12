@@ -1,9 +1,10 @@
 package seleniumLearning;
 
-
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CheckBrowser {
@@ -23,6 +24,17 @@ public class CheckBrowser {
 		}
 		System.out.println(actuls);
 		
+		
+		List <WebElement>links=driver.findElements(By.tagName("a"));
+		int size=links.size();
+		System.out.println(size);
+		
+		for(WebElement link:links) {
+			String LinkText=link.getText();//this will give me the link text
+			if(!LinkText.isEmpty()) {//if the link is not empty so print it
+				System.out.println(LinkText);
+			}
+		}
 		
 		
 		/*
