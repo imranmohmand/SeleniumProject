@@ -33,7 +33,9 @@ public class CheckBrowser {
 			String LinkText=link.getText();//this will give me the link text
 			if(!LinkText.isEmpty()) {//if the link is not empty so print it
 				System.out.println(LinkText);
+			//	System.out.println(link.getAttribute("a"));
 			}
+			
 		}
 		
 		
