@@ -23,7 +23,7 @@ public class GetCSSvalues {
 			System.out.println("not Equal");
 		}
 		
-		//fist any locator in webElement and than get CssValue and print it in a console.
+		//first  locate any webElement and than get CssValue and print it in a console.
 		//checking color
 	String hotleColor=hotlelink.getCssValue("color");
 	System.out.println(hotleColor);
