@@ -1,6 +1,11 @@
 package seleniumLearning;
 
+
+
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByTagName;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,7 +42,16 @@ public class SauceLabs {
 			System.out.println("is not available testcase is failed ");
 		}
 		
-		
+		List<WebElement> listLinks=driver.findElements(By.tagName("a"));
+		for(WebElement list:listLinks) {
+		String listString=list.getText();
+			if(!listString.isEmpty()) {
+				System.out.println(listString);
+			}
+		}
+		int size=listLinks.size();
+		System.out.println(size);
+		driver.close();
 
 	}
 
