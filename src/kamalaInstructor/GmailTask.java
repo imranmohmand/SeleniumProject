@@ -28,13 +28,18 @@ public class GmailTask {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
+		WebElement click=driver.findElement(By.xpath("//div[@class=\'MocG8c B9IrJb LMgvRb KKjvXb\']"));
+		
+		click.click();
+		
+		
 	
 		List<WebElement>Lang=driver.findElements(By.xpath("//*[@id='lang-chooser']/div[1]/div[1]/div[9]"));
 
 		for(WebElement ele:Lang) {
 		
 			String listOfLanguage=ele.getText();
-			System.out.println(listOfLanguage);
+			
 			if(!Lang.isEmpty()) {
 				System.out.println(listOfLanguage);
 			}
