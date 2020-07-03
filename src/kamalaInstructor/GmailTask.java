@@ -32,20 +32,17 @@ public class GmailTask {
 		
 		click.click();
 		
+		//String text=click.getAttribute("inner text");
 		
+		List<WebElement>Languages=driver.findElements(By.xpath("//*[@id='lang-chooser']/div[2]//span"));
+		for(WebElement ele:Languages) {
+			
+			String LanguageText=ele.getText();
+			System.out.println(LanguageText);
 	
-		List<WebElement>Lang=driver.findElements(By.xpath("//*[@id='lang-chooser']/div[1]/div[1]/div[9]"));
+	
 
-		for(WebElement ele:Lang) {
-		
-			String listOfLanguage=ele.getText();
-			
-			if(!Lang.isEmpty()) {
-				System.out.println(listOfLanguage);
-			}
-			
 		}
-		
 		
 	}
 
