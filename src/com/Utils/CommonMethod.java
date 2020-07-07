@@ -1,7 +1,12 @@
 package com.Utils;
 
+import java.io.File;
+import java.io.IOException;
 import java.security.PublicKey;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -23,7 +28,15 @@ public static void  SetUp(String Browser) {
 		System.setProperty("webdriver.firefox.driver", "drivers/geckodriver.exe");
 		driver=new FirefoxDriver();
 		}
+
 	}
+public static void Screenshort(String screenshort) throws IOException {
+	
+	TakesScreenshot Sshort=(TakesScreenshot)driver;
+	File src=Sshort.getScreenshotAs(OutputType.FILE);
+	File DestinationFile=new File("ScreenShot/google"+screenshort+".png");
+	FileUtils.copyFile(src, DestinationFile);
+}
 
 }
 

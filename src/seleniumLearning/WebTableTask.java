@@ -43,7 +43,7 @@ public class WebTableTask {
 			if(RowsText.contains(expectedString)){
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//table[@class='SampleTable']/tbody/tr[7]/td[1]")).click();
-				//driver.findElement(By.xpath("//table[@class='SampleTable']/tbody/tr["+i+"]/td[1]")).click();
+			//	driver.findElement(By.xpath("//table[@class='SampleTable']/tbody/tr["+i+"]/td[1]")).click();
 				break;
 				
 				

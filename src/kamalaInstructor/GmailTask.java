@@ -40,6 +40,9 @@ public class GmailTask {
 			String LanguageText=ele.getText();
 			System.out.println(LanguageText);
 	
+			if(!Languages.isEmpty()) {
+				ele.click();
+			}
 	
 
 		}
