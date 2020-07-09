@@ -43,6 +43,16 @@ public class GmailTask {
 			if(!Languages.isEmpty()) {
 				ele.click();
 			}
+			
+			//boolean isChecked=false;
+//			for(int i=0;i<Languages.size();i++) {
+//				String textString=Languages.get(i).getText();
+//				System.out.println(textString);
+//				isChecked=Languages.get(i).isSelected();
+//				if(!isChecked) {
+//					Languages.get(i).click();
+//					Thread.sleep(2000);
+//				}
 	
 
 		}

@@ -34,7 +34,7 @@ public static void Screenshort(String screenshort) throws IOException {
 	
 	TakesScreenshot Sshort=(TakesScreenshot)driver;
 	File src=Sshort.getScreenshotAs(OutputType.FILE);
-	File DestinationFile=new File("ScreenShot/google"+screenshort+".png");
+	File DestinationFile=new File("ScreenShot/google/"+screenshort+".png");
 	FileUtils.copyFile(src, DestinationFile);
 }
 

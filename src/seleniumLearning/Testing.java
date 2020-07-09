@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import com.Utils.CommonMethod;
 
 public class Testing extends CommonMethod{
-	static String srURLString;
+	
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -24,7 +24,7 @@ public class Testing extends CommonMethod{
 		WebElement searchbar=driver.findElement(By.name("q"));
 		searchbar.sendKeys("selenium");
 		searchbar.submit();
-		CommonMethod.Screenshort(srURLString);
+		CommonMethod.Screenshort("google_pageLinks");
 		List<WebElement>TabList=driver.findElements(By.xpath("//*[@class='hdtb-mitem hdtb-imb']"));
 		
 		int size=TabList.size();
@@ -36,7 +36,7 @@ public class Testing extends CommonMethod{
 		
 
 		}
-		CommonMethod.Screenshort(srURLString);
+		
 		WebElement allElementDimension=driver.findElement(By.xpath("//div[@class='hdtb-mitem hdtb-msel hdtb-imb']"));
 		Dimension dimensionAll=allElementDimension.getSize();
 		System.out.println("the height is "+dimensionAll.height + " the width is "+ dimensionAll.width );
@@ -48,7 +48,7 @@ public class Testing extends CommonMethod{
     System.out.println(heiElement);
     
     driver.findElement(By.xpath("//h3[@class='LC20lb DKV0Md']")).click();
-    CommonMethod.Screenshort(srURLString);
+    CommonMethod.Screenshort("after_clicking_on_link");
 		
 		
 		driver.close();
