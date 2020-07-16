@@ -24,6 +24,12 @@ public class Testing extends CommonMethod{
 		WebElement searchbar=driver.findElement(By.name("q"));
 		searchbar.sendKeys("selenium");
 		searchbar.submit();
+		
+		List<WebElement>ListLInk=driver.findElements(By.xpath("//*[@class='LC20lb DKV0Md']"));
+		for(int i=1;i<10;i++) {
+			String texString=ListLInk.get(i).getText();
+			System.out.println(texString);
+		}
 		CommonMethod.Screenshort("google_pageLinks");
 		List<WebElement>TabList=driver.findElements(By.xpath("//*[@class='hdtb-mitem hdtb-imb']"));
 		

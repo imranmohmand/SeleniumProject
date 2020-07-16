@@ -57,10 +57,27 @@ public class OrbitzAssignment {
 		File destinatioFile=new File("ScreenShot/orbitz.png");
 		FileHandler.copy(sourceFile, destinatioFile);
 //depart as early as
+		
+		
 		WebElement departElement=driver.findElement(By.xpath("//input[@id='cruise-start-date-hp-cruise']"));
 		departElement.clear();
 		departElement.click();
-		driver.findElement(By.xpath("//*[@id='cruise-start-date-wrapper-hp-cruise']/div/div/div[2]/table/tbody/tr[5]/td[3]/button")).click();
+		//driver.findElement(By.xpath("//*[@id='cruise-start-date-wrapper-hp-cruise']/div/div/div[2]/table/tbody/tr[5]/td[3]/button")).click();
+		System.out.println("********************");
+		List<WebElement>li=driver.findElements(By.xpath("//div[@class='datepicker-cal']/div/table[1]//td"));
+		int size=li.size();
+		System.out.println(size);
+		for(int p=0;p<size;p++) {
+		String date=li.get(p).getText();
+		if(date.equals("15")) {
+			li.get(p).click();
+			break;
+			
+		}
+		}
+		System.out.println("***************");
+		
+		
 // depart as late as
 		WebElement deapartLate=driver.findElement(By.xpath("//input[@id='cruise-end-date-hp-cruise']"));
 		deapartLate.clear();

@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GmailTask {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
@@ -34,15 +34,31 @@ public class GmailTask {
 		
 		//String text=click.getAttribute("inner text");
 		
-		List<WebElement>Languages=driver.findElements(By.xpath("//*[@id='lang-chooser']/div[2]//span"));
-		for(WebElement ele:Languages) {
+		List<WebElement>Languages=driver.findElements(By.xpath("//*[@id='lang-chooser']/div[2]/div"));
+		Thread.sleep(3000);
+		for(int i =1;i<Languages.size();i++) {
+			WebElement ele=driver.findElement(By.xpath("//*[@id='lang-chooser']/div/div["+i+"]"));
 			
-			String LanguageText=ele.getText();
-			System.out.println(LanguageText);
+			ele.click();
+			System.out.println(ele.getText());
+			//String text=Languages.get(i).getText();
+			//String text=ele.getText();
+			Thread.sleep(2000);
+			//System.out.println(text);
+			driver.navigate().back();
+			Thread.sleep(5000);
+		
 	
-			if(!Languages.isEmpty()) {
-				ele.click();
-			}
+			
+//		for(WebElement ele:Languages) {
+//			
+//			String LanguageText=ele.getText();
+//			System.out.println(LanguageText);
+//	
+//			if(!Languages.isEmpty()) {
+//				ele.click();
+			
+//			}
 			
 			//boolean isChecked=false;
 //			for(int i=0;i<Languages.size();i++) {
