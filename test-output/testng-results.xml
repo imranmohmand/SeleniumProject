@@ -1,41 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
+  <suite name="Default suite" duration-ms="20216" started-at="2020-07-23T19:35:34 EDT" finished-at="2020-07-23T19:35:54 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
-      <class name="TestNGPackage.AnnotationPractice">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestNGPackage.AnnotationPractice@67b92f0a]" name="beforeSuite" is-config="true" duration-ms="12" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
+    <test name="Default test" duration-ms="20216" started-at="2020-07-23T19:35:34 EDT" finished-at="2020-07-23T19:35:54 EDT">
+      <class name="TestNGPackage.DataProviderTask">
+        <test-method status="PASS" signature="freeCrm(java.lang.String, java.lang.String)[pri:0, instance:TestNGPackage.DataProviderTask@4f970963]" name="freeCrm" duration-ms="7876" started-at="2020-07-23T19:35:34 EDT" data-provider="getdata" finished-at="2020-07-23T19:35:42 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[imrankhan@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNGPackage.AnnotationPractice@67b92f0a]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
+        </test-method> <!-- freeCrm -->
+        <test-method status="PASS" signature="freeCrm(java.lang.String, java.lang.String)[pri:0, instance:TestNGPackage.DataProviderTask@4f970963]" name="freeCrm" duration-ms="6286" started-at="2020-07-23T19:35:42 EDT" data-provider="getdata" finished-at="2020-07-23T19:35:48 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[imran@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[zbc]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestNGPackage.AnnotationPractice@67b92f0a]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
+        </test-method> <!-- freeCrm -->
+        <test-method status="PASS" signature="freeCrm(java.lang.String, java.lang.String)[pri:0, instance:TestNGPackage.DataProviderTask@4f970963]" name="freeCrm" duration-ms="5959" started-at="2020-07-23T19:35:48 EDT" data-provider="getdata" finished-at="2020-07-23T19:35:54 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[imranmohmand@yahoo.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGPackage.AnnotationPractice@67b92f0a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="annotaion()[pri:0, instance:TestNGPackage.AnnotationPractice@67b92f0a]" name="annotaion" duration-ms="9" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- annotaion -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:TestNGPackage.AnnotationPractice@67b92f0a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="method1()[pri:0, instance:TestNGPackage.AnnotationPractice@67b92f0a]" name="method1" duration-ms="4" started-at="2020-07-16T23:41:08 EDT" finished-at="2020-07-16T23:41:08 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method1 -->
-      </class> <!-- TestNGPackage.AnnotationPractice -->
+        </test-method> <!-- freeCrm -->
+      </class> <!-- TestNGPackage.DataProviderTask -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

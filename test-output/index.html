@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse-327176726\testng-customsuite.xml</span>
+                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse-777246606\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestNGPackage.AnnotationPractice" hash-for-method="annotaion">annotaion</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestNGPackage.DataProviderTask" hash-for-method="freeCrm(imranmohmand@yahoo.com, abcd)">freeCrm(imranmohmand@yahoo.com, abcd)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestNGPackage.AnnotationPractice" hash-for-method="method1">method1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestNGPackage.DataProviderTask" hash-for-method="freeCrm(imran@yahoo.com, zbc)">freeCrm(imran@yahoo.com, zbc)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestNGPackage.DataProviderTask" hash-for-method="freeCrm(imrankhan@yahoo.com, 123)">freeCrm(imrankhan@yahoo.com, 123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,21 +132,31 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestNGPackage.AnnotationPractice</span>
+              <span class="class-name">TestNGPackage.DataProviderTask</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="annotaion">
-                  </a> <!-- annotaion -->
-                  <span class="method-name">annotaion</span>
+                  <a name="freeCrm(imranmohmand@yahoo.com, abcd)">
+                  </a> <!-- freeCrm(imranmohmand@yahoo.com, abcd) -->
+                  <span class="method-name">freeCrm</span>
+                  <span class="parameters">(imranmohmand@yahoo.com, abcd)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="method1">
-                  </a> <!-- method1 -->
-                  <span class="method-name">method1</span>
+                  <a name="freeCrm(imran@yahoo.com, zbc)">
+                  </a> <!-- freeCrm(imran@yahoo.com, zbc) -->
+                  <span class="method-name">freeCrm</span>
+                  <span class="parameters">(imran@yahoo.com, zbc)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="freeCrm(imrankhan@yahoo.com, 123)">
+                  </a> <!-- freeCrm(imrankhan@yahoo.com, 123) -->
+                  <span class="method-name">freeCrm</span>
+                  <span class="parameters">(imrankhan@yahoo.com, 123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +164,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse-327176726\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse-777246606\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -158,7 +173,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestNGPackage.AnnotationPractice&quot;/&gt;
+      &lt;class name=&quot;TestNGPackage.DataProviderTask&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -198,20 +213,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'annotaion')
-data.setCell(0, 2, 'TestNGPackage.AnnotationPractice')
-data.setCell(0, 3, 9);
+data.setCell(0, 1, 'freeCrm')
+data.setCell(0, 2, 'TestNGPackage.DataProviderTask')
+data.setCell(0, 3, 7876);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'method1')
-data.setCell(1, 2, 'TestNGPackage.AnnotationPractice')
-data.setCell(1, 3, 4);
+data.setCell(1, 1, 'freeCrm')
+data.setCell(1, 2, 'TestNGPackage.DataProviderTask')
+data.setCell(1, 3, 6286);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'freeCrm')
+data.setCell(2, 2, 'TestNGPackage.DataProviderTask')
+data.setCell(2, 3, 5959);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -237,34 +256,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestNGPackage.AnnotationPractice</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">beforeSuite</span>
+              <div class="chronological-class-name">TestNGPackage.DataProviderTask</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">freeCrm(imrankhan@yahoo.com, 123)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest</span>
-                <span class="method-start">15 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">30 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">43 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">annotaion</span>
-                <span class="method-start">45 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">63 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">method1</span>
-                <span class="method-start">64 ms</span>
+                <span class="method-name">freeCrm(imran@yahoo.com, zbc)</span>
+                <span class="method-start">7882 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">freeCrm(imranmohmand@yahoo.com, abcd)</span>
+                <span class="method-start">14169 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
