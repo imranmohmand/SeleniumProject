@@ -2,7 +2,8 @@ package com.Utils;
 
 import java.io.File;
 import java.io.IOException;
-import java.security.PublicKey;
+
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -11,25 +12,32 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 public class CommonMethod {
 	//in java we want to avoid repetitive step
 	//so make webDriver as a static so no need to write it again and again
 public static WebDriver driver;
 
-	
 
 public static void  SetUp(String Browser) {
 		if(Browser.equalsIgnoreCase("Chrome")) {
 			
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		driver=new ChromeDriver();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 	
 		}else if(Browser.equalsIgnoreCase("Firefox")) {
 		System.setProperty("webdriver.firefox.driver", "drivers/geckodriver.exe");
 		driver=new FirefoxDriver();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		}
 
 	}
+
 public static void Screenshort(String screenshort) throws IOException {
 	
 	TakesScreenshot Sshort=(TakesScreenshot)driver;

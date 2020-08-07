@@ -4,14 +4,15 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class excelCodes {
 	
-	/*
+
 	
 	
 	 public String[][] readExcel(String filePath,String fileName,String sheetName) throws IOException{
@@ -27,11 +28,7 @@ public class excelCodes {
 	        //If it is xlsx file then create object of XSSFWorkbook class
 	        TWorkbook = new XSSFWorkbook(inputStream);
 	        }
-	      //Check condition if the file is xls file
-	        else if(fileExtensionName.equals(".xls")){
-	            //If it is xls file then create object of HSSFWorkbook class
-	            TWorkbook = new HSSFWorkbook(inputStream);
-	        }
+	      
 	       // d sheet inside the workbook by its name
 	        Sheet TSheet = TWorkbook.getSheet(sheetName);
 	        //Find number of rows in excel file
@@ -58,7 +55,8 @@ public class excelCodes {
 	        //this to return data to the calling method
 	        return data ; 
 	        
-	        */
-	        }  
+	        
+	 }
+}
 
 
