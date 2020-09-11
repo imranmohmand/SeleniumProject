@@ -6,6 +6,7 @@
       <class name="kamalaInstructor.ToolSQA">
         <methods>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- kamalaInstructor.ToolSQA -->
     </classes>

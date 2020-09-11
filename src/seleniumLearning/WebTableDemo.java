@@ -2,7 +2,7 @@ package seleniumLearning;
 
 
 
-import java.util.Iterator;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +15,7 @@ public class WebTableDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/default.aspx");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

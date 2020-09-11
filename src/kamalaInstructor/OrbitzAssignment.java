@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -20,12 +21,15 @@ public class OrbitzAssignment {
 	public static void main(String[] args) throws InterruptedException, IOException {
 		// TODO Auto-generated method stub
 		
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.orbitz.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		TakesScreenshot screen=(TakesScreenshot)driver;
+		File src=screen.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src, new File("C:\\Users\\user\\eclipse-workspace\\TestNGBasic\\ScreenShort\\ScreenShort\\orbitz.png"));
+		
 		Boolean isDisplayed=driver.findElement(By.xpath("//span[@class='icon icon-hotels']")).isDisplayed();
 		System.out.println("the default search bar is displayed :"+isDisplayed);
 		
